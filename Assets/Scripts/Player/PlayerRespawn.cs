@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerRespawn : MonoBehaviour
 {
@@ -35,6 +36,15 @@ public class PlayerRespawn : MonoBehaviour
             SoundManager.instance.PlaySound(checkpoint);
             collision.GetComponent<Collider2D>().enabled = false;
             collision.GetComponent<Animator>().SetTrigger("activate");
+        }
+        if(collision.tag == "ExitDoor")
+        {
+            if(SceneManager.GetActiveScene().buildIndex > 4)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+            }
+            else SceneManager.LoadScene(0);
+            
         }
     }
 }

@@ -9044,7 +9044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousRoom: {fileID: 287634126}
-  nextRoom: {fileID: 0}
+  nextRoom: {fileID: 1956511919}
   cam: {fileID: 519420030}
 --- !u!61 &669000977
 BoxCollider2D:
@@ -9056,7 +9056,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.03460884, y: 0.034608364}
@@ -16625,7 +16625,7 @@ GameObject:
   - component: {fileID: 1160923560}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: ExitDoor
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16653,12 +16653,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1160923558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ae00d9d3c53b2241b9aa004268f0c4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f41e2c69cdc2a94aa86d60368350fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousRoom: {fileID: 1956511919}
-  nextRoom: {fileID: 0}
-  cam: {fileID: 519420030}
+  checkpoint: {fileID: 8300000, guid: ac2ef9f49e9913d47a234631fc894d68, type: 3}
 --- !u!61 &1160923561
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16669,7 +16667,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.03460884, y: 0.034608364}
@@ -21957,7 +21955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousRoom: {fileID: 276923568}
-  nextRoom: {fileID: 0}
+  nextRoom: {fileID: 287634126}
   cam: {fileID: 519420030}
 --- !u!61 &1501836677
 BoxCollider2D:
@@ -21969,7 +21967,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.03460884, y: 0.034608364}
